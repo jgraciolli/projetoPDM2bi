@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:spacing="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:tint="#FF4081" />
+
+            <TextView
+                android:id="@+id/tvWelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#D81B60"
+                android:gravity="center"
+                android:text="Mil perdões"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="O que você fez dessa vez?"
+            android:textColor="#880E4F"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/edtSituation"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Ex: esqueci nosso aniversário de namoro"
+            android:inputType="textCapSentences"
+            android:textColor="#D81B60"
+            android:textColorHint="#F8BBD0"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Como deve ser o pedido de desculpas?"
+            android:textColor="#880E4F"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/edtTone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Ex: romântico, engraçado, poético"
+            android:inputType="textCapSentences"
+            android:textColor="#D81B60"
+            android:textColorHint="#F8BBD0"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"/>
+
+        <Button
+            android:id="@+id/btnGenerate"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Gerar Pedido de Desculpas"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#E91E63"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:drawablePadding="8dp"
+            android:drawableTint="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seu pedido de desculpas:"
+            android:textColor="#880E4F"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:id="@+id/tvApology"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:minHeight="150dp"
+            android:textColor="#D81B60"
+            android:textSize="15sp"
+            android:lineSpacingExtra="4dp"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Salvar Para Depois"
+            android:backgroundTint="#F8BBD0"
+            android:textColor="#D81B60"
+            android:textAllCaps="false"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="8dp"
+            android:drawableTint="#D81B60"/>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Sair"
+            android:backgroundTint="#880E4F"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:layout_marginTop="24dp"/>
+    </LinearLayout>
+</ScrollView>
